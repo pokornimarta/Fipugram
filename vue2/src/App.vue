@@ -35,9 +35,6 @@
           <router-link to="/Signup" class="nav-link">Registracija</router-link>
         </li>
       </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Pretraga" aria-label="Search">
-      </form>
       </div>
       </nav>
 

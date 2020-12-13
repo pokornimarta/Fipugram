@@ -44,15 +44,13 @@ export default {
     filteredCards() {
       //filter koji se ponaša kao da filtrira
       let termin = this.store.searchTerm;
-      let newCards = [];
-      for (let card of this.cards) {
-        if (card.description.indexOf(termin) >= 0) {
-          newCards.push(card);
-        }
-      }
-      return newCards;
-    },
-  },
+      
+      return this.cards.filter(card => card.description.includes(termin));
+      
+        },
+      },
+      
+  
   components: {
     InstagramCard
   }
